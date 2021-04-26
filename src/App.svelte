@@ -14,7 +14,7 @@
 </script>
 
 {#each posts as item}
-  <img src={item.preview[2]} alt="" />
+  <h1 style="padding:1em">{item.title}</h1>
 {/each}
 
 <InfiniteScroll on:scroll={getPosts} />
